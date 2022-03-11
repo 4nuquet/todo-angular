@@ -1,0 +1,37 @@
+<app-navbar [brand]="nickname"></app-navbar>
+<div class="home">
+  <section class="home__content">
+    <div class="home__form">
+      <div class="home__card-form">
+        <h1 class="home--title">Que haceres 🏁</h1>
+
+        <input
+          class="home__card-form--input"
+          type="text"
+          placeholder="Tarea"
+          [(ngModel)]="task"
+        />
+        <button class="btn btn--success" (click)="addTask()">Agregar</button>
+      </div>
+    </div>
+
+    <div class="home__list">
+      <h1 class="home--title">Todo esto para Hacer 💪🏽</h1>
+
+      <ng-container *ngFor="let singleTask of listTasks">
+        <app-task-card
+          [task]="singleTask"
+          (eventRemove)="removeTask($event)"
+          (eventDone)="doneTask($event)"
+        ></app-task-card>
+      </ng-container>
+    </div>
+  </section>
+
+  <section class="ram">
+    <div class="char" *ngFor="let character of listCharacters">
+      <img [src]="character.image" alt="" />
+      <span>{{ character.name }}</span>
+    </div>
+  </section>
+</div>

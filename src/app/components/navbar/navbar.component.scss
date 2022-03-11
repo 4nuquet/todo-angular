@@ -1,0 +1,12 @@
+@import "../../../assets/theme/variables";
+
+.navbar {
+  width: 100vw;
+  padding: 0.5rem;
+  background-color: $bg-dark;
+
+  &--brand {
+    color: #fff;
+    font-weight: bold;
+  }
+}

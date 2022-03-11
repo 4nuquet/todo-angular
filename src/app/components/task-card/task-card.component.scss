@@ -1,0 +1,23 @@
+@import "../../../assets/theme/variables";
+
+.task-card {
+  width: 100%;
+  display: flex;
+  padding: 0.75rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: $border-gray;
+  border-radius: $radius-tiny;
+
+  &--actions {
+    & button:first-child {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &--success {
+    background-color: $success-hover;
+    color: $white;
+  }
+}

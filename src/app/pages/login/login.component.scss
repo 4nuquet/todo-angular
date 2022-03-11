@@ -1,0 +1,17 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--error {
+    margin-top: 0.5rem;
+    color: rgb(208, 80, 80);
+  }
+}

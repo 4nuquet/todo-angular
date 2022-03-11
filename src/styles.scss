@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/theme/variables";
+
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,400&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  height: 2rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0.25rem;
+  background-color: $white;
+
+  &--success {
+    background-color: $success;
+    color: $white;
+    &:hover {
+      background-color: $success-hover;
+    }
+  }
+  &--danger {
+    background-color: $danger;
+    color: $white;
+    &:hover {
+      background-color: $danger-hover;
+    }
+  }
+}
