@@ -4,6 +4,7 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { nicknameReducer } from './nickname/nickname.reducer';
 import { environment } from 'src/environments/environment';
+import { taksReducer } from './tasks/task.reducer';
 
 @NgModule({
   declarations: [],

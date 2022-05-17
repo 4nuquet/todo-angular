@@ -74,12 +74,12 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  getSingleChar(id: any) {
-    this.ramApiService.getSingleCharacter(id).subscribe((res: any) => {
-      console.log('getSingleChar', res);
-      this.listCharacters = [res];
-    });
-  }
+  // getSingleChar(id: any) {
+  //   this.ramApiService.getSingleCharacter(id).subscribe((res: any) => {
+  //     console.log('getSingleChar', res);
+  //     this.listCharacters = [res];
+  //   });
+  // }
 
   generateId(): number {
     return Math.floor(Math.random() * 100);

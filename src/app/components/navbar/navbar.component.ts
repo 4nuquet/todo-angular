@@ -10,4 +10,8 @@ export class NavbarComponent {
   @Output() eventBrand = new EventEmitter<string | null>();
 
   constructor() {}
+
+  onSubmit() {
+    this.eventBrand.emit(this.brand);
+  }
 }
