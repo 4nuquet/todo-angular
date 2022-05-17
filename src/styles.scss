@@ -11,27 +11,27 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.btn {
-  height: 2rem;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border: 0;
-  box-shadow: none;
-  border-radius: 0.25rem;
-  background-color: $white;
+// .btn {
+//   height: 2rem;
+//   padding: 0.375rem 0.75rem;
+//   font-size: 1rem;
+//   border: 0;
+//   box-shadow: none;
+//   border-radius: 0.25rem;
+//   background-color: $white;
 
-  &--success {
-    background-color: $success;
-    color: $white;
-    &:hover {
-      background-color: $success-hover;
-    }
-  }
-  &--danger {
-    background-color: $danger;
-    color: $white;
-    &:hover {
-      background-color: $danger-hover;
-    }
-  }
-}
+//   &--success {
+//     background-color: $success;
+//     color: $white;
+//     &:hover {
+//       background-color: $success-hover;
+//     }
+//   }
+//   &--danger {
+//     background-color: $danger;
+//     color: $white;
+//     &:hover {
+//       background-color: $danger-hover;
+//     }
+//   }
+// }

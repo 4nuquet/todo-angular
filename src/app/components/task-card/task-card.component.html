@@ -1,9 +1,9 @@
-<div class="task-card" [ngClass]="{ 'task-card--success': task.state }">
+<div class="task-card mt-2" [ngClass]="{ 'task-card--success': task.state }">
   <span>{{ task.id }} - {{ task.title }}</span>
   <div class="task-card--actions">
-    <button class="btn btn--danger" (click)="eventRemove.emit(task)">
+    <button class="btn btn-danger" (click)="eventRemove.emit(task)">
       Remove
     </button>
-    <button class="btn btn--success" (click)="eventDone.emit(task)">Ok</button>
+    <button class="btn btn-success" (click)="eventDone.emit(task)">Ok</button>
   </div>
 </div>

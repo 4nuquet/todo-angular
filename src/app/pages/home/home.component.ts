@@ -32,8 +32,8 @@ export class HomeComponent implements OnInit {
       console.log(res);
       this.nickname = res.nickname;
     });
-    //this.nickname = this.nicknameService.get();
-    //this.fetchApi();
+    this.nickname = this.nicknameService.get();
+    this.fetchApi();
   }
 
   eventFromNav(msg: string | null) {

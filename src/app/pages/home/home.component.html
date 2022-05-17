@@ -1,21 +1,27 @@
 <app-navbar [brand]="nickname"></app-navbar>
 <div class="home">
-  <section class="home__content">
-    <div class="home__form">
-      <div class="home__card-form">
-        <h1 class="home--title">Que haceres 🏁</h1>
+  <section class="conatiner row p-4">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="text-center my-4">Que haceres 🏁</h1>
 
-        <input
-          class="home__card-form--input"
-          type="text"
-          placeholder="Tarea"
-          [(ngModel)]="task"
-        />
-        <button class="btn btn--success" (click)="addTask()">Agregar</button>
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Tarea"
+            [(ngModel)]="task"
+          />
+          <div class="mt-3 d-grid gap-2">
+            <button class="btn btn-success" (click)="addTask()" type="button">
+              Agregar
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="home__list">
+    <div class="col">
       <h1 class="home--title">Todo esto para Hacer 💪🏽</h1>
 
       <ng-container *ngFor="let singleTask of listTasks">
@@ -28,8 +34,8 @@
     </div>
   </section>
 
-  <section class="ram">
-    <div class="char" *ngFor="let character of listCharacters">
+  <section class="conatiner row">
+    <div class="col" *ngFor="let character of listCharacters">
       <img [src]="character.image" alt="" />
       <span>{{ character.name }}</span>
     </div>
