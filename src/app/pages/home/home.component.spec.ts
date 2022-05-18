@@ -5,7 +5,7 @@ import { HomeComponent } from './home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { of, throwError } from 'rxjs';
 
-fdescribe('HomeComponent', () => {
+describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
   let ramApiService: RamApiService;
@@ -104,7 +104,7 @@ fdescribe('HomeComponent', () => {
   });
 });
 
-fdescribe('HomeComponent - servicio 500', () => {
+describe('HomeComponent - servicio 500', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
   let ramApiService: RamApiService;
